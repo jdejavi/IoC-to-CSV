@@ -2,6 +2,8 @@
 
 Esta es una herramienta simple escrita en Python para convertir un archivo de Indicadores de Compromiso (IoCs) en un formato específico a un archivo CSV para facilitar su análisis y procesamiento.
 
+**Recuerda que debes cambiar el valor de la variable API_KEY por tu api key de virustotal**
+
 ## Autor
 
 **Nombre del Autor:** Javier Matilla Martín aka m4t1
