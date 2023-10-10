@@ -4,6 +4,12 @@
 #Modo de uso: python3 IoC_to_CSV.py iocs.txt
 #Espero que os sirva! :)))
 
+import vt
+import requests
+import time
+from sys import *
+import re
+
 banner = """
  ██▓▒█████  ▄████▄     ▄▄▄█████▓▒█████      ▄████▄   ████████▒   █▓
 ▓██▒██▒  ██▒██▀ ▀█     ▓  ██▒ ▓▒██▒  ██▒   ▒██▀ ▀█ ▒██    ▓██░   █▒
@@ -16,11 +22,6 @@ banner = """
  ░     ░ ░ ░ ░                     ░ ░     ░ ░           ░      ░  
            ░                               ░                   ░   
 """
-import vt
-import requests
-import time
-from sys import *
-import re
 
 #Variables GLOBALES
 API_KEY = "[API_KEY]"
