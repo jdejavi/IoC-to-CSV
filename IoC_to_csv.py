@@ -4,6 +4,7 @@
 #Modo de uso: python3 IoC_to_CSV.py iocs.txt
 #Espero que os sirva! :)))
 
+import os
 import vt
 import requests
 import time
@@ -26,7 +27,19 @@ banner = """
 #Variables GLOBALES
 API_KEY = "[API_KEY]"
 
+print(banner)
+
+if len(argv) != 2:
+	print("[?] Uso: python3 Ioc_to_CSV.py ioc.txt")
+	print("Donde:")
+	print("  - ioc.txt: Archivo con los IoC")
+	exit(1)
+
 archivo_iocs = argv[1]
+
+if not os.path.exists(archivo_iocs):
+	print(f"[!] El archivo {archivo_iocs} no existe")
+	exit(1)
 
 #Expresión regular que encuentra direcciones IPv4
 regex_ip = r'\b\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3}\b'
