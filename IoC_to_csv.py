@@ -1,8 +1,8 @@
 #!/bin/env python3
 
-#
-#
-#
+#Programa hecho por Javier Matilla aka m4t1
+#Modo de uso: python3 IoC_to_CSV.py iocs.txt
+#Espero que os sirva! :)))
 
 banner = """
  ██▓▒█████  ▄████▄     ▄▄▄█████▓▒█████      ▄████▄   ████████▒   █▓
@@ -29,6 +29,8 @@ archivo_iocs = argv[1]
 
 #Expresión regular que encuentra direcciones IPv4
 regex_ip = r'\b\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3}\b'
+
+#Expresión regular que encuentra urls
 regex_url = r'https?://\S+'
 
 archivo_salida = 'listaIoCs.csv'
