@@ -53,7 +53,7 @@ archivo_salida = 'listaIoCs.csv'
 headers = {
         'x-apikey': API_KEY
 }
-print(banner)
+
 with open(archivo_salida, 'w') as arch_salida:
 	arch_salida.write('Type,Object,Description' + '\n')
 
@@ -101,5 +101,3 @@ with open(archivo_iocs, 'r') as archivo:
 			print(f'[*] IoC --> {ioc_clean} almacenado en archivo salida')
 			time.sleep(10)
 			print('\n\n')
-		else:
-			print('Error, te jodes por feo')
